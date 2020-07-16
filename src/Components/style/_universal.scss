@@ -1,0 +1,48 @@
+@import "./colors";
+
+body,
+html {
+  min-height: 100vh;
+}
+// General Elements
+.container {
+  width: 90%;
+  min-width: 600px;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-weight: bold;
+  color: $primary-color;
+}
+// Colors
+.dark {
+  background-color: $primary-color;
+}
+
+.dark-text {
+  color: $primary-color;
+}
+
+// Button
+
+.btn {
+  background-color: $primary-color;
+  padding: 5px 6px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  color: $secondary-color;
+  text-decoration: none;
+  text-align: center;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: background-color 100ms ease-in-out 50ms;
+  &:hover {
+    background-color: #000000;
+  }
+}

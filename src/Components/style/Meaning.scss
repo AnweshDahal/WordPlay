@@ -1,0 +1,41 @@
+@import "./colors";
+
+.meaning-block {
+  margin: 10px 0px;
+  border-bottom: 1px #aaaaaa solid;
+  padding-bottom: 10px;
+  .word,
+  .info,
+  .definition,
+  .example-text {
+    font-weight: normal;
+    margin: 2px 0px;
+  }
+
+  .word {
+    font-size: 36px;
+  }
+
+  .info {
+    font-weight: normal;
+    .author {
+      color: $blue;
+    }
+  }
+
+  .definition {
+    //margin-top: 10px;
+    width: 70%;
+    text-align: justify;
+  }
+
+  .example {
+    margin-top: 10px;
+    .example-title {
+      margin-bottom: 2px;
+    }
+    .example-text {
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "./Components/style/universal";
+@import "./Components/style/colors";
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  .title {
+    font-size: 36px;
+    align-self: start;
+  }
+  .sub-titles {
+    left: 0;
+    align-self: end;
+    .subtitle-text {
+      color: $blue;
+    }
+  }
+}
+
+.contents {
+  margin: 20px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  .search {
+    display: flex;
+    align-items: center;
+    .search-bar {
+      padding: 5px;
+      border: 2px $primary-color solid;
+      border-radius: 5px;
+      margin: 0px 5px 0px 0px;
+      width: 500px;
+    }
+    .api-source {
+      margin: 0px 5px;
+      .api-source-rb {
+        margin-right: 5px;
+      }
+      .sourceLabel {
+        margin-right: 2.5px;
+      }
+    }
+  }
+}
+.result {
+  display: flex;
+  margin-top: 20px;
+  .res {
+    padding: 10px;
+    width: 70%;
+    border: $primary-color 2px solid;
+    border-radius: 8px;
+    h3 {
+      font-size: 16px;
+      color: $blue;
+    }
+  }
+  .recent {
+    margin-left: 10px;
+    display: flex;
+    width: 30%;
+    background-color: $blue;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 20px;
+    height: max-content;
+    .recently-searched {
+      color: $secondary-color;
+    }
+    .inner-rect {
+      margin-top: 10px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      background-color: $secondary-color;
+      padding: 20px;
+      .history {
+        width: 100%;
+        overflow: hidden;
+        margin: 5px auto;
+        border: 2px $blue solid;
+        padding: 5px;
+        border-radius: 5px;
+        .history-word {
+          color: $blue;
+        }
+      }
+    }
+  }
+}
